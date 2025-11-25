@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para mi Stefanita preciosa. 💕</title>
+
+    <!-- Fuentes románticas -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background: #f9e8ff;
+            margin: 0;
+            padding: 30px 10px;
+            text-align: center;
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 54px;
+            color: #c76fb9;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- FOTO ESTILO POLAROID --- */
+        .polaroid {
+            background: white;
+            padding: 15px 15px 40px;
+            margin: 25px auto;
+            width: 80%;
+            max-width: 350px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+            border-radius: 6px;
+            transform: rotate(-2deg);
+            transition: 0.3s;
+            opacity: 0;
+            animation: slideUp 1.2s ease forwards;
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+
+        .polaroid:nth-child(1) { animation-delay: 0.2s; }
+        .polaroid:nth-child(2) { animation-delay: 0.4s; }
+        .polaroid:nth-child(3) { animation-delay: 0.6s; }
+        .polaroid:nth-child(4) { animation-delay: 0.8s; }
+        .polaroid:nth-child(5) { animation-delay: 1s; }
+
+        .polaroid img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* --- TEXTO DE CARTA --- */
+        .texto {
+            background: #ffe6f4;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 1.2s;
+        }
+
+        /* --- BOTÓN DE MÚSICA --- */
+        button {
+            margin-top: 35px;
+            padding: 14px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background: #C8A2C8;
+            color: white;
+            transition: 0.3s;
+            animation: fadeIn 2.5s ease forwards;
+            opacity: 0;
+            animation-delay: 1.5s;
+        }
+
+        button:hover {
+            background: #c089d4;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #7a5c80;
+            padding-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 3s ease forwards;
+            animation-delay: 2s;
+            font-style: italic;
+        }
+
+        /* --- ANIMACIONES --- */
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px) rotate(-4deg); }
+            to { opacity: 1; transform: translateY(0) rotate(-2deg); }
+        }
+
+        /* --- CORAZONES FLOTANDO --- */
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hearts span {
+            position: absolute;
+            font-size: 22px;
+            color: rgba(255, 150, 200, 0.4);
+            animation: float 8s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translateY(-10vh) translateX(20px); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CORAZONES -->
+    <div class="hearts">
+        <span style="left: 10%;">💗</span>
+        <span style="left: 30%; animation-delay: 2s;">💞</span>
+        <span style="left: 50%; animation-delay: 4s;">💕</span>
+        <span style="left: 70%; animation-delay: 6s;">💖</span>
+        <span style="left: 85%; animation-delay: 1s;">💘</span>
+    </div>
+
+    <div class="container">
+
+        <h1>Para mi Stefanita, mi princesa;
+            La reina de mi corazón y mi ser. 💗✨</h1>
+
+        <!-- FOTOS POLAROID -->
+        <div class="polaroid">
+            <img src="Fotos/foto1.jpg" alt="">
+            <div class="caption">Ese beso tan especial... que hizo que mi corazón palpitara a 1000 km/h ✨💕</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="Fotos/foto2.jpg" alt="">
+            <div class="caption">Nuestro primer abrazo; el sentimiento más cálido que pude tener en toda mi vida. 🥺💘</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="Fotos/foto3.png" alt="">
+            <div class="caption">Jejeje... creo que no recuerdas cuando tomamos esta foto mi amorshito... 💖👀</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="Fotos/foto4.png" alt="">
+            <div class="caption">Y esta, supongo que no me viste... soy negrito, me camuflo con la oscuridad JSJSJS. 💌🐱‍👤</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="Fotos/foto5.jpeg" alt="">
+            <div class="caption">Una sorpresa tan especial... que nos sacó un susto, pero fue un momento bello. 💖✨</div>
+        </div>
+
+        <!-- CARTA -->
+        <div class="texto">
+            <p>
+                No sé por donde empezar, miamorshito, estoy tan agradecido con Dios por haberme permitido volver a hablar con vos...
+Y quiero celebrar que hoy empezamos una nueva etapa de nuestras vidas, estamos a nada de convertirnos en adultos, sin embargo, nada cambiará;
+Porque seguirás siendo el amor de mi vida hasta el final, y aunque pasen los años, te seguiré amando como la primera vez. 🥺💗💕
+Quiero celebrar que nos pudimos graduar juntos, no en el mismo lugar, pero con el corazón amando a la misma persona. 💗
+Hemos superado 6 meses en los que la distancia nos hizo mal, muchas veces tuvimos dolor en nuestro corazón por la falta que nos hacia uno al otro...
+Pero la espera finalmente terminó, el otro año, en tan solo un mes, podremos estar juntos fisicamente, con nuestros corazónes juntos, y nuestras almas unidas.💘✨
+No sabes cuánto estuve esperando por este momento, mi bebita peshosha😿💕💗
+Y estoy tan feliz de que finalmente pudimos cumplir nuestras metas. 💕
+Nunca olvides que para mi siempre seras mi mayor orgullo, siempre seré tu fan numero uno, y estaré aqui sin importar lo que pase, apoyándote, alentándote, motivándote a seguir
+aunque yo ya no pueda mas, seguiré haciéndolo hasta el fin. Porque eres tú quién me motiva a seguir adelante, a caminar sin miedo y a levantarme en los fracasos. 🥺💌
+Espero me permitas seguir estando a tu lado, cumpliendo nuestros sueños, juntos, tomarte de la mano y no volverte a soltar, abrazarnos hasta convertirnos en nuestros porpios abrigos. 💕
+Y que ningun problema ni obstáculo pueda romper este vínculo, porque si caminamos con Dios de nuestra mano, podremos cumplir todos nuestros sueños, lograr nuestras metas, crecer,
+aprender, conocernos absolutamente todo del otro, pero sobretodo... Amarnos con toda nuestra sinceridad, asi como lo llevamos haciendo desde el día 1. 🥺💘
+Te amo, te adoro, te anhelo, te extraño, te quiero, te necesito con todo mi corazón, mi alma y mi ser, mi Stefanita peshosha, no existen palabras para expresarte lo que causas dentro de mí...
+No puedo expresar las millones de emociones hermosas que me haces sentir con una sola mirada, un mensaje o una palabra. 😭💕
+Te amo hoy mi amor, te amé ayer, te amaré mañana HASTA EL FIN, y cada día MUCHIIIISIMO MUCHISIMO MÁSH. 😽💖💌
+            </p>
+        </div>
+
+        <!-- BOTÓN -->
+        <button onclick="document.getElementById('player').play()">
+            Es que... Eres tú, no quiero a nadie más. 💗🎶
+        </button>
+        <audio id="player" src="NADIEMAS.mp3"></audio>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            Hecho con todo el amor que fluye en mi corazón gracias a ti,  
+            por ver tu alma brillar a través de tus bellos y chinitos ojitos,  
+            mi princesa hermosa 💖 — Del amor de tu vida.
+        </footer>
+
+    </div>
+</body>
+</html>
+
